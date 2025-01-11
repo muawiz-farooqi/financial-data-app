@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FilterCriteria } from '../types'
+import { FilterCriteria } from '@/app/types'
 
 interface Props {
   onFilter: (criteria: FilterCriteria) => void

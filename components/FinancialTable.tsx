@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FinancialData } from '../types'
+import { FinancialData } from '@/app/types'
 
 interface Props {
   data: FinancialData[]

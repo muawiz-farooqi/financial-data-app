@@ -26,7 +26,7 @@ export default function Home() {
         throw new Error('Failed to fetch data')
       }
       const jsonData = await response.json()
-      const formattedData: FinancialData[] = jsonData.map((item: any) => ({
+      const formattedData: FinancialData[] = jsonData.map((item: FinancialData) => ({
         date: item.date,
         revenue: item.revenue,
         netIncome: item.netIncome,
@@ -36,7 +36,7 @@ export default function Home() {
       }))
       setData(formattedData)
       setFilteredData(formattedData)
-    } catch (err) {
+    } catch {
       setError('An error occurred while fetching data')
     } finally {
       setIsLoading(false)
@@ -72,4 +72,3 @@ export default function Home() {
     </main>
   )
 }
-
