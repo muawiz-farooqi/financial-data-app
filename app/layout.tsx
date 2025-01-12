@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Apple Inc. Financial Data',
   description: 'Financial data filtering app for Apple Inc.',
   icons: {
-    icon: '/bars.ico',
+    icon: '/graph.ico',
   },
 }
 
