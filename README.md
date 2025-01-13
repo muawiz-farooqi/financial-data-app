@@ -35,7 +35,7 @@ To run this project locally, follow these steps:
 
 ## Deployed App
 
-You can view the deployed version of this app at [https://financial-data-app-g1wa.vercel.app/](https://financial-data-app-g1wa.vercel.app/)
+You can view the deployed version of this app at [here](https://financial-data-app-g1wa.vercel.app/)
 
 <!-- 
 ## Additional Information
