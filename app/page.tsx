@@ -19,9 +19,9 @@ export default function Home() {
     setIsLoading(true)
     setError(null)
     try {
-      const apiKey = process.env.NEXT_PUBLIC_FMP_API_KEY
-      const apiUrl = process.env.NEXT_PUBLIC_FMP_API_URL
-      const response = await fetch(`${apiUrl}/income-statement/AAPL?period=annual&apikey=${apiKey}`)
+      const apiKey = process.env.NEXT_PUBLIC_FDA_API_KEY
+      const response = await fetch(`https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual
+                                    &apikey=${apiKey}`)
       if (!response.ok) {
         throw new Error('Failed to fetch data')
       }
